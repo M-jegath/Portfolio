@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background-navy: #0f172a;
+  --color-accent-mustard: #fbbf24;
+  --color-muted-gray: #94a3b8;
+
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  --spacing-section: 100px;
+
+  --letter-spacing-heading: 0.05em;
+  --letter-spacing-label: 0.2em;
+}
+
+/* Custom Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-background-navy);
+    color: white;
+    font-family: var(--font-body);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: var(--letter-spacing-heading);
+  }
+
+  p {
+    color: var(--color-muted-gray);
+    line-height: 1.625;
+  }
+}
+
+/* Custom Component Utilities */
+@utility section-padding {
+  padding-top: var(--spacing-section);
+  padding-bottom: var(--spacing-section);
+}
+
+@utility label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-label);
+  font-weight: 500;
+}
+
+@utility container-custom {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  @media (min-width: 768px) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}

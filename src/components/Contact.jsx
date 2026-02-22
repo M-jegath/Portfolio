@@ -77,7 +77,7 @@ const Contact = () => {
                     {/* Left Side: CTA */}
                     <div className="lg:w-1/2">
                         <span className="label text-accent-mustard mb-6 block">Ready to start?</span>
-                        <h2 className="text-6xl md:text-8xl font-black italic uppercase tracking-tighter mb-12">
+                        <h2 className="text-5xl md:text-8xl font-black italic uppercase tracking-tighter mb-12">
                             Let's <br />
                             <span className="text-white/20 hover:text-white transition-colors cursor-pointer">talk.</span>
                         </h2>
@@ -89,7 +89,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="label text-[8px] text-muted-gray mb-1">Email me at</p>
-                                    <p className="text-xl font-bold">mjegath26@gmail.com</p>
+                                    <p className="text-lg md:text-xl font-bold">mjegath26@gmail.com</p>
                                 </div>
                             </div>
 
@@ -99,7 +99,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="label text-[8px] text-muted-gray mb-1">Based in</p>
-                                    <p className="text-xl font-bold">Tirupur, Tamil Nadu</p>
+                                    <p className="text-lg md:text-xl font-bold">Tirupur, Tamil Nadu</p>
                                 </div>
                             </div>
 
@@ -109,7 +109,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <p className="label text-[8px] text-muted-gray mb-1">Call me at</p>
-                                    <p className="text-xl font-bold">+91 63833 08016</p>
+                                    <p className="text-lg md:text-xl font-bold">+91 63833 08016</p>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
-                        className="lg:w-1/2 bg-slate-900/40 p-10 md:p-16 rounded-[48px] border border-white/5 backdrop-blur-md shadow-2xl relative"
+                        className="lg:w-1/2 bg-slate-900/40 p-6 sm:p-10 md:p-16 rounded-[48px] border border-white/5 backdrop-blur-md shadow-2xl relative"
                     >
                         {status.success ? (
                             <motion.div

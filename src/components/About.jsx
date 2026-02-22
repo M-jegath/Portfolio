@@ -40,7 +40,7 @@ const About = () => {
                         className="flex flex-col gap-16"
                     >
                         {/* Quote Block */}
-                        <div className="relative p-10 bg-slate-900/40 rounded-3xl border border-white/5">
+                        <div className="relative p-6 md:p-10 bg-slate-900/40 rounded-3xl border border-white/5">
                             <h3 className="text-2xl font-bold mb-6 text-white">Education</h3>
                             <div className="mb-6">
                                 <h4 className="font-bold text-lg text-accent-mustard">Kongu Engineering College (Erode)</h4>
@@ -61,14 +61,14 @@ const About = () => {
                         </div>
 
                         {/* Statistics Row */}
-                        <div className="grid grid-cols-2 gap-10">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                             <div className="group">
-                                <h3 className="text-6xl font-bold text-white mb-2 group-hover:text-accent-mustard transition-colors">3+</h3>
+                                <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 group-hover:text-accent-mustard transition-colors">3+</h3>
                                 <span className="label text-muted-gray tracking-[0.3em]">Major <br /> Projects</span>
                                 <div className="h-1 w-0 bg-accent-mustard mt-4 group-hover:w-full transition-all duration-500" />
                             </div>
                             <div className="group">
-                                <h3 className="text-6xl font-bold text-white mb-2 group-hover:text-accent-mustard transition-colors">8.4</h3>
+                                <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 group-hover:text-accent-mustard transition-colors">8.4</h3>
                                 <span className="label text-muted-gray tracking-[0.3em]">Current <br /> CGPA</span>
                                 <div className="h-1 w-0 bg-accent-mustard mt-4 group-hover:w-full transition-all duration-500" />
                             </div>

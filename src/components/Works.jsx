@@ -29,7 +29,7 @@ const Works = () => {
             <div className="container-custom">
                 <div className="mb-16">
                     <span className="label text-accent-mustard mb-4 block">Our Work</span>
-                    <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tight italic">
+                    <h2 className="text-4xl md:text-7xl font-black uppercase tracking-tight italic">
                         Projects
                     </h2>
                 </div>
@@ -43,7 +43,7 @@ const Works = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
-                            className="relative group overflow-hidden rounded-[32px] border border-white/5 cursor-pointer bg-background-navy/40 p-10 h-[300px] flex flex-col justify-between"
+                            className="relative group overflow-hidden rounded-[32px] border border-white/5 cursor-pointer bg-background-navy/40 p-6 md:p-10 min-h-[300px] flex flex-col justify-between"
                         >
                             {/* Visual Accent */}
                             <div className="absolute top-0 right-0 w-32 h-32 blur-3xl opacity-10 group-hover:opacity-30 transition-opacity" style={{ backgroundColor: project.accent }} />
@@ -52,10 +52,10 @@ const Works = () => {
                                 <span className="label text-accent-mustard mb-2 block">
                                     {project.category}
                                 </span>
-                                <h3 className="text-3xl font-bold uppercase italic tracking-tighter text-white mb-4">
+                                <h3 className="text-2xl md:text-3xl font-bold uppercase italic tracking-tighter text-white mb-4">
                                     {project.title}
                                 </h3>
-                                <p className="text-muted-gray leading-relaxed">
+                                <p className="text-sm md:text-base text-muted-gray leading-relaxed">
                                     {project.description}
                                 </p>
                             </div>

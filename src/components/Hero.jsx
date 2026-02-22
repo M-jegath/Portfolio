@@ -21,10 +21,10 @@ const Hero = () => {
                         <span className="label text-accent-mustard mb-6 block drop-shadow-sm px-1 border-l-2 border-accent-mustard">
                             AI & DS Enthusiast
                         </span>
-                        <h1 className="text-6xl md:text-8xl lg:text-9xl mb-8 leading-[0.9] tracking-tight text-white uppercase italic font-black">
+                        <h1 className="text-5xl md:text-8xl lg:text-9xl mb-8 leading-[0.9] tracking-tight text-white uppercase italic font-black">
                             <span className="text-white hover:text-white/80 transition-colors duration-500 cursor-default">Jegath</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-muted-gray mb-12 max-w-md leading-relaxed">
+                        <p className="text-base md:text-xl text-muted-gray mb-12 max-w-md leading-relaxed">
                             I am an Artificial Intelligence and Data Science student with a strong interest in problem solving and frontend development.
                             Passionate about writing clean code and scalable applications.
                         </p>
@@ -34,7 +34,7 @@ const Hero = () => {
                             download="Jegath_Resume.pdf"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
-                            className="group flex items-center gap-4 px-10 py-5 bg-accent-mustard text-background-navy font-bold rounded-2xl hover:bg-white transition-all duration-300 shadow-xl shadow-accent-mustard/20 w-fit"
+                            className="group flex items-center gap-4 px-8 md:px-10 py-4 md:py-5 bg-accent-mustard text-background-navy font-bold rounded-2xl hover:bg-white transition-all duration-300 shadow-xl shadow-accent-mustard/20 w-fit"
                         >
                             Download Resume
                             <Download className="group-hover:translate-y-1 transition-transform" size={20} />
@@ -56,7 +56,7 @@ const Hero = () => {
                             <img
                                 src="hero_portrait.jpg"
                                 alt="Jegath Portrait"
-                                className="w-full h-[600px] object-cover group-hover:scale-110 transition-transform duration-1000 grayscale hover:grayscale-0"
+                                className="w-full h-[400px] md:h-[600px] object-cover group-hover:scale-110 transition-transform duration-1000 grayscale hover:grayscale-0"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-background-navy via-transparent to-transparent opacity-60" />
 

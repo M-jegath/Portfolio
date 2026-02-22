@@ -69,7 +69,7 @@ const Skills = () => {
                                 backgroundColor: 'rgba(251, 191, 36, 0.05)',
                                 borderColor: 'rgba(251, 191, 36, 0.2)'
                             }}
-                            className="p-10 flex flex-col justify-center items-center text-center bg-slate-900/50 border border-white/5 rounded-[40px] group transition-all duration-500 cursor-default"
+                            className="p-6 md:p-10 flex flex-col justify-center items-center text-center bg-slate-900/50 border border-white/5 rounded-[40px] group transition-all duration-500 cursor-default"
                         >
                             <div className="w-20 h-20 bg-white/5 rounded-3xl flex items-center justify-center text-accent-mustard group-hover:bg-accent-mustard group-hover:text-background-navy transition-all duration-500 mb-8 rotate-3 group-hover:rotate-12">
                                 {skill.icon}

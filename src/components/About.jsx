@@ -64,12 +64,12 @@ const About = () => {
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                             <div className="group">
                                 <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 group-hover:text-accent-mustard transition-colors">3+</h3>
-                                <span className="label text-muted-gray tracking-[0.3em]">Major <br /> Projects</span>
+                                <span className="label text-muted-gray tracking-widest sm:tracking-[0.3em]">Major Projects</span>
                                 <div className="h-1 w-0 bg-accent-mustard mt-4 group-hover:w-full transition-all duration-500" />
                             </div>
                             <div className="group">
                                 <h3 className="text-5xl md:text-6xl font-bold text-white mb-2 group-hover:text-accent-mustard transition-colors">8.4</h3>
-                                <span className="label text-muted-gray tracking-[0.3em]">Current <br /> CGPA</span>
+                                <span className="label text-muted-gray tracking-widest sm:tracking-[0.3em]">Current CGPA</span>
                                 <div className="h-1 w-0 bg-accent-mustard mt-4 group-hover:w-full transition-all duration-500" />
                             </div>
                         </div>

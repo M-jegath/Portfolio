@@ -5,7 +5,7 @@
   <h3>✨ Modern AI & Data Science Portfolio ✨</h3>
   <p>A sleek, high-performance showcase built for the future.</p>
   
-  [![Vercel Deployment](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-hbvl324ih-jegaths-projects-a5123b08.vercel.app)
+  [![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-success?style=for-the-badge&logo=vercel)](https://jegath-folio.vercel.app)
   [![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://react.dev/)
   [![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 </div>

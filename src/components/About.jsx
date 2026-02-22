@@ -15,33 +15,20 @@ const About = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <span className="label text-accent-mustard mb-6 block">About Me</span>
-                        <h2 className="text-4xl md:text-5xl mb-8 leading-tight">
-                            AI problem solver, <br />
-                            <span className="text-muted-gray">Precision frontend developer.</span>
+                        <h2 className="text-4xl md:text-5xl mb-8 leading-tight uppercase font-black italic">
+                            AI & <br />
+                            <span className="text-muted-gray hover:text-white transition-colors">Data Science Student</span>
                         </h2>
                         <div className="space-y-6 text-xl">
                             <p>
-                                I am an AI & Data Science student at Kongu Engineering College.
-                                My passion lies in applying logical thinking and structured approaches
-                                to real-world challenges through both data and interfaces.
+                                Motivated Artificial Intelligence and Data Science student with a strong interest in problem solving and frontend development, currently studying at Kongu Engineering College.
                             </p>
                             <p className="text-muted-gray">
-                                Whether it's training machine learning models for detecting scams,
-                                or building scalable web applications with clean UI, my focus is always
-                                on delivering impactful and user-friendly software solutions.
+                                Skilled in building interactive and user-friendly web interfaces, applying logical thinking to real-world challenges, and creating efficient, scalable applications.
                             </p>
                         </div>
 
-                        <div className="mt-12 pt-12 border-t border-white/10 flex gap-12">
-                            <div>
-                                <span className="label text-accent-mustard block mb-2">Expertise</span>
-                                <p className="text-sm">Machine Learning</p>
-                            </div>
-                            <div>
-                                <span className="label text-accent-mustard block mb-2">Focus</span>
-                                <p className="text-sm">Web Interfaces</p>
-                            </div>
-                        </div>
+
                     </motion.div>
 
                     {/* RIGHT: Quote + Stats */}

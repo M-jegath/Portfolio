@@ -1,14 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ChevronRight, ArrowUpRight, Layout, Download } from 'lucide-react';
+import { ArrowUpRight, Download } from 'lucide-react';
 
 const Hero = () => {
-    const roles = [
-        { title: 'AI & DS Student', highlighted: true },
-        { title: 'Frontend Developer', highlighted: false },
-        { title: 'UI/UX Designer', highlighted: false },
-    ];
-
     return (
         <section id="home" className="min-h-screen pt-40 md:pt-48 pb-20 flex flex-col relative overflow-hidden">
             {/* Background Shapes */}
@@ -25,7 +19,7 @@ const Hero = () => {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                     >
                         <span className="label text-accent-mustard mb-6 block drop-shadow-sm px-1 border-l-2 border-accent-mustard">
-                            Based in Tamil Nadu / AI & ML Enthusiast
+                            AI & DS Enthusiast
                         </span>
                         <h1 className="text-6xl md:text-8xl lg:text-9xl mb-8 leading-[0.9] tracking-tight text-white uppercase italic font-black">
                             <span className="text-white hover:text-white/80 transition-colors duration-500 cursor-default">Jegath</span>
@@ -81,30 +75,6 @@ const Hero = () => {
                         </motion.div>
                     </motion.div>
                 </div>
-
-                {/* BOTTOM ROW - Statistic Cards */}
-                <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5, duration: 0.8 }}
-                    className="grid md:grid-cols-3 gap-6 mt-24 md:mt-32"
-                >
-                    {roles.map((role, index) => (
-                        <motion.div
-                            key={index}
-                            whileHover={{ y: -10 }}
-                            className={`p-8 rounded-3xl flex flex-col justify-between group cursor-pointer transition-all duration-500 ${role.highlighted ? 'bg-accent-mustard text-background-navy ring-8 ring-accent-mustard/10 shadow-2xl shadow-accent-mustard/20' : 'bg-slate-900/50 border border-white/5 text-white hover:bg-slate-800/80 hover:border-white/10'}`}
-                        >
-                            <div className="flex justify-between items-start mb-12">
-                                <div className={`p-4 rounded-2xl ${role.highlighted ? 'bg-background-navy/10' : 'bg-white/5'}`}>
-                                    <Layout size={32} strokeWidth={1.5} />
-                                </div>
-                                <ArrowUpRight className={`opacity-0 group-hover:opacity-100 transition-opacity duration-300 ${role.highlighted ? 'text-background-navy' : 'text-accent-mustard'}`} size={24} />
-                            </div>
-                            <h3 className="text-2xl font-bold uppercase tracking-tight">{role.title}</h3>
-                        </motion.div>
-                    ))}
-                </motion.div>
             </div>
         </section>
     );

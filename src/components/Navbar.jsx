@@ -41,12 +41,9 @@ const Navbar = () => {
                     href="#home"
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="flex items-center gap-2 group"
+                    className="flex items-center gap-2"
                 >
-                    <div className="w-10 h-10 bg-accent-mustard rounded-lg flex items-center justify-center text-background-navy group-hover:rotate-12 transition-transform duration-300">
-                        <Layout size={24} strokeWidth={2.5} />
-                    </div>
-                    <span className="font-heading font-bold text-xl tracking-tight text-white">JEGATH</span>
+                    <span className="font-heading font-extrabold text-2xl tracking-tighter text-white hover:text-accent-mustard transition-colors duration-300">JEGATH</span>
                 </motion.a>
 
                 {/* Desktop Nav */}

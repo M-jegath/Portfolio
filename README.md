@@ -1,20 +1,83 @@
-# React + Vite
+# 🚀 Jegath-Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+  <img src="public/vite.svg" alt="Logo" width="80" height="80">
+  <h3>✨ Modern AI & Data Science Portfolio ✨</h3>
+  <p>A sleek, high-performance showcase built for the future.</p>
+  
+  [![Vercel Deployment](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://portfolio-hbvl324ih-jegaths-projects-a5123b08.vercel.app)
+  [![React](https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react)](https://react.dev/)
+  [![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
+</div>
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Overview
 
-## React Compiler
+Welcome to my portfolio! This project is a reflection of my journey as an **AI & Data Science Student**. It combines cutting-edge web technologies with a minimal, professional aesthetic to showcase my skills, projects, and passion for problem-solving.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **Frontend core:** React 19 + Vite 7 ⚡
+- **Styling:** Tailwind CSS 4 + Lucide Icons 🎨
+- **Animations:** Framer Motion 🎬
+- **Form Handling:** Formspree Integration 📧
+- **Deployment:** Vercel 🌐
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
 
-steps:
-1) npm install eslint@9 --save-dev
-2) npm run dev
+## 🚦 Quick Start
+
+Ready to run the project? Follow these simple steps:
+
+### 1️⃣ Clone & Navigate
+```bash
+git clone <your-repo-url>
+cd Portfolio
+```
+
+### 2️⃣ Install Dependencies
+We use a specific version of ESLint for maximum stability.
+```bash
+npm install --legacy-peer-deps
+```
+
+### 3️⃣ Launch the Dev Server
+Experience the magic with hot-module replacement!
+```bash
+npm run dev
+```
+✨ Your site is now live at: `http://localhost:5173`
+
+---
+
+## 📜 Available Commands
+
+| Command | Action |
+| :--- | :--- |
+| `npm run dev` | 🔥 Starts the development server |
+| `npm run build` | 🏗️ Creates a production-ready build |
+| `npm run lint` | 🧹 Checks code quality |
+| `npm run preview` | 👁️ Previews the production build locally |
+
+---
+
+## � Deployment
+
+### ⚡ Deploy to Vercel
+This project is optimized for Vercel.
+
+**Option A: Dashboard (Easiest)**
+1. Connect your GitHub.
+2. Import project.
+3. Click **Deploy**.
+
+**Option B: CLI**
+1. `npm install -g vercel`
+2. `vercel`
+
+---
+
+<div align="center">
+  <p>Built with ❤️ by <b>Jegath</b></p>
+</div>

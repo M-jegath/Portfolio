@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { Layout } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Navbar = () => {
@@ -20,7 +19,7 @@ const Navbar = () => {
 
             // Simple active section detection
             const sections = navLinks.map(link => link.href.substring(1));
-            for (const section of sections.reverse()) {
+            for (const section of [...sections].reverse()) {
                 const element = document.getElementById(section);
                 if (element && window.scrollY >= element.offsetTop - 100) {
                     setActiveSection(section);
@@ -32,6 +31,25 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const scrollToSection = (e, href) => {
+        e.preventDefault();
+        const id = href.substring(1);
+        const element = document.getElementById(id);
+        if (element) {
+            const offset = 80; // Adjust for navbar height
+            const bodyRect = document.body.getBoundingClientRect().top;
+            const elementRect = element.getBoundingClientRect().top;
+            const elementPosition = elementRect - bodyRect;
+            const offsetPosition = elementPosition - offset;
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
+        }
+        setIsOpen(false);
+    };
 
     return (
         <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${scrolled ? 'bg-background-navy/80 backdrop-blur-xl py-4 border-b border-white/5 shadow-2xl' : 'bg-transparent py-8'}`}>
@@ -54,6 +72,7 @@ const Navbar = () => {
                             <motion.a
                                 key={link.name}
                                 href={link.href}
+                                onClick={(e) => scrollToSection(e, link.href)}
                                 initial={{ opacity: 0, y: -10 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
@@ -105,7 +124,7 @@ const Navbar = () => {
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    onClick={() => setIsOpen(false)}
+                                    onClick={(e) => scrollToSection(e, link.href)}
                                     className={`label text-lg ${activeSection === link.href.substring(1) ? 'text-accent-mustard font-bold' : 'text-white'}`}
                                 >
                                     {link.name}

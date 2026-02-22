@@ -11,14 +11,16 @@ const MainLayout = ({ children }) => {
                 {children}
             </main>
             <footer className="py-12 border-t border-white/5 bg-background-navy/50">
-                <div className="container-custom flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="container-custom flex flex-col items-center md:flex-row justify-between gap-10 md:gap-6">
                     <div className="flex items-center gap-2">
                         <span className="font-heading font-extrabold text-2xl tracking-tighter text-white">JEGATH</span>
                     </div>
 
-                    <p className="label">&copy; 2026 JEGATH. Built with React & Tailwind.</p>
+                    <p className="label text-center max-w-[280px] md:max-w-none text-muted-gray">
+                        &copy; 2026 JEGATH. <span className="block md:inline mt-2 md:mt-0">Built with React & Tailwind.</span>
+                    </p>
 
-                    <div className="flex gap-8">
+                    <div className="flex gap-10">
                         <a
                             href="https://leetcode.com/u/JEGATH-M/"
                             target="_blank"

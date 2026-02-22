@@ -15,7 +15,27 @@ const MainLayout = ({ children }) => {
                     <div className="flex items-center gap-2">
                         <span className="font-heading font-extrabold text-2xl tracking-tighter text-white">JEGATH</span>
                     </div>
+
                     <p className="label">&copy; 2026 JEGATH. Built with React & Tailwind.</p>
+
+                    <div className="flex gap-8">
+                        <a
+                            href="https://leetcode.com/u/JEGATH-M/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="label text-xs tracking-[0.2em] font-bold text-muted-gray hover:text-accent-mustard transition-colors duration-300 uppercase"
+                        >
+                            Leetcode
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/jegath28"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="label text-xs tracking-[0.2em] font-bold text-muted-gray hover:text-accent-mustard transition-colors duration-300 uppercase"
+                        >
+                            Linkedin
+                        </a>
+                    </div>
                 </div>
             </footer>
         </div>
